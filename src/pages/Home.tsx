@@ -77,16 +77,16 @@ const Home: React.FC = () => {
             
             <div className="flex flex-wrap gap-6 items-center justify-center mb-8">
                 <img 
-                    src={vercel} 
-                    alt="Vercel" 
+                    src={git} 
+                    alt="Git" 
                     className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain cursor-pointer transition-all duration-300 rounded-lg p-2 bg-white/[0.03] hover:scale-110 hover:rotate-[3deg] hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)] hover:bg-transparent"
                 />
                 <img 
-                    src={netlify} 
-                    alt="netlify" 
+                    src={github} 
+                    alt="GitHub" 
                     className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain cursor-pointer transition-all duration-300 rounded-lg p-2 bg-white/[0.03] hover:scale-110 hover:rotate-[3deg] hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)] hover:bg-transparent"
                 />
-                <img 
+                 <img 
                     src={vite} 
                     alt="Vite" 
                     className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain cursor-pointer transition-all duration-300 rounded-lg p-2 bg-white/[0.03] hover:scale-110 hover:rotate-[3deg] hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)] hover:bg-transparent"
@@ -102,13 +102,13 @@ const Home: React.FC = () => {
                     className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain cursor-pointer transition-all duration-300 rounded-lg p-2 bg-white/[0.03] hover:scale-110 hover:rotate-[3deg] hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)] hover:bg-transparent"
                 />
                 <img 
-                    src={git} 
-                    alt="Git" 
+                    src={netlify} 
+                    alt="netlify" 
                     className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain cursor-pointer transition-all duration-300 rounded-lg p-2 bg-white/[0.03] hover:scale-110 hover:rotate-[3deg] hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)] hover:bg-transparent"
                 />
-                <img 
-                    src={github} 
-                    alt="GitHub" 
+                 <img 
+                    src={vercel} 
+                    alt="Vercel" 
                     className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain cursor-pointer transition-all duration-300 rounded-lg p-2 bg-white/[0.03] hover:scale-110 hover:rotate-[3deg] hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)] hover:bg-transparent"
                 />
             </div>
