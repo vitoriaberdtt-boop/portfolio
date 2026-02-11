@@ -5,6 +5,7 @@ import js from '../assets/js.png'
 import ts from '../assets/ts.png'
 import react from '../assets/react.png'
 import vercel from '../assets/vercel.png'
+import netlify from '../assets/netlify.png'
 import vite from '../assets/vite.png'
 import vscode from '../assets/vscode.png'
 import figma from '../assets/figma.png'
@@ -78,6 +79,11 @@ const Home: React.FC = () => {
                 <img 
                     src={vercel} 
                     alt="Vercel" 
+                    className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain cursor-pointer transition-all duration-300 rounded-lg p-2 bg-white/[0.03] hover:scale-110 hover:rotate-[3deg] hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)] hover:bg-transparent"
+                />
+                <img 
+                    src={netlify} 
+                    alt="netlify" 
                     className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain cursor-pointer transition-all duration-300 rounded-lg p-2 bg-white/[0.03] hover:scale-110 hover:rotate-[3deg] hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)] hover:bg-transparent"
                 />
                 <img 
