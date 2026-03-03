@@ -4,7 +4,7 @@ import clickcounter from '../assets/clickcounter.jpg'
 import javascriptquiz from '../assets/javascriptquiz.jpg'
 import calculator from '../assets/calculator.jpg'
 import multiplicationtable from '../assets/multiplicationtable.jpg'
-import landingpage from '../assets/landingpage.jpg'
+import landingpage from '../assets/sanrio.jpg'
 import quiz from '../assets/quiz.jpg'
 
 const Projects: React.FC = () => {
