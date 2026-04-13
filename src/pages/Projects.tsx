@@ -1,10 +1,10 @@
 import React from 'react'
-import bakery from '../assets/marias.jpeg'
+import bakery from '../assets/mariabakery.jpeg'
 import todolist from '../assets/todolist.jpg'
 import clickcounter from '../assets/clickcounter.jpg'
 import javascriptquiz from '../assets/javascriptquiz.jpg'
 import calculator from '../assets/calculator.jpg'
-import multiplicationtable from '../assets/multiplicationtable.jpg'
+import multiplicationtable from '../assets/multi.jpeg'
 import landingpage from '../assets/sanrio.jpg'
 import quiz from '../assets/quiz.jpg'
 
