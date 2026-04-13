@@ -17,7 +17,7 @@ const Projects: React.FC = () => {
             title: "Maria's Bakery",
             description: "A fictional e-commerce website for Maria's Bakery. Customers can browse and purchase cakes, add or remove items from their cart, and search for cakes by name or flavor using the search bar.",
             stack: "Full-stack web application built with JavaScript · REST API with Node.js, Nodemon, and Express.js · MySQL as the relational database",
-            link: "https://marias-bakery-production.up.railway.app/",
+            link: "https://marias-bakery.onrender.com/",
         },
         {
             src: todolist,
