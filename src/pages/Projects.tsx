@@ -1,5 +1,5 @@
 import React from 'react'
-import bakery from '../assets/bakery.jpg'
+import bakery from '../assets/marias.jpeg'
 import todolist from '../assets/todolist.jpg'
 import clickcounter from '../assets/clickcounter.jpg'
 import javascriptquiz from '../assets/javascriptquiz.jpg'
