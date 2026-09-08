@@ -10,7 +10,7 @@ import vite from '../assets/vite.png'
 import vscode from '../assets/vscode.png'
 import figma from '../assets/figma.png'
 import git from '../assets/git.png'
-import github from '../assets/github.png'
+import github from '../assets/github-white-icon.webp'
 import node from '../assets/node-js-removebg-preview.png'
 import nodemon from '../assets/nodemon-removebg-preview.png'
 import express from '../assets/express-js.png'
@@ -18,43 +18,100 @@ import sequelize from '../assets/sequelize-removebg-preview.png'
 import sql from '../assets/sql.png'
 import mysql from '../assets/mysql-removebg-preview.png'
 import insomnia from '../assets/insomnia-removebg-preview.png'
-import eu from '../assets/euu.jpg'
+import eu from '../assets/euzinha.jpeg'
+import Star from '../assetstwo/star.png'
+import pixelStar1 from '../assetstwo/pixel-start-1.png'
+import pixelStar2 from '../assetstwo/pixel-start-2.png'
 
 const Home: React.FC = () => {
     return (
-        <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-20">
+        <div className="max-w-[1700px] mx-auto px-5 sm:px-8 md:px-12 py-10 md:py-20 overflow-x-hidden relative">
 
-            {/* ── About Me ── */}
-            <SectionTitle label="About Me" />
+            {/* estrela branca */}
+            <img
+                src={Star}
+                className="absolute left-3 sm:left-30 top-7 sm:top-4 w-28 sm:w-30 md:w-52 opacity-100 pointer-events-none z-0 rotate-[15deg]"
+                alt="star-outline-left"
+            />
 
-            <div className="flex flex-col md:flex-row gap-12 md:gap-16 items-center mb-24">
-                {/* Texto */}
-                <div className="flex-1 relative">
-                    <div className="absolute -left-5 top-0 bottom-0 w-[3px] rounded-full bg-gradient-to-b from-turquoise-medium to-transparent" />
-                    <h4 className="font-normal text-lg md:text-xl leading-relaxed text-text-light pl-2">
-                        Hi, my name is Vitória, and I am a university student in Systems Analysis and Development at IFSul. <br /><br />
-                        I have solid web development skills and have built several responsive and dynamic projects, which I share on my GitHub and LinkedIn. <br /><br />
-                        I have a strong interest in the technology field and am always seeking to learn more and keep my skills up to date. <br /><br />
-                        I am currently seeking an IT internship.
-                    </h4>
-                </div>
-
-                {/* Foto — glow ring estático, sem animação */}
-                <div className="relative flex-shrink-0">
-                    <div className="absolute inset-0 rounded-full shadow-[0_0_40px_8px_rgba(0,217,255,0.25)]" />
-                    <img
-                        src={eu}
-                        alt="Vitória"
-                        className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 object-cover rounded-full border-4 border-turquoise-medium relative z-10"
-                    />
-                </div>
+            {/* título */}
+            <div className="flex items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-16 relative z-10">
+                <img src={pixelStar1} alt="star" className="w-8 h-8 sm:w-8 sm:h-8 object-contain" />
+                <h3 className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-terminal text-white tracking-wide">Sobre mim</h3>
             </div>
 
-            {/* ── Tech Stack ── */}
-            <SectionTitle label="Tech Stack" />
+<div className="flex flex-col-reverse lg:flex-row gap-10 sm:gap-12 lg:gap-16 items-center justify-between mb-16 sm:mb-20 pb-16 sm:pb-24 lg:pb-20 lg:pr-[clamp(40px,8vw,140px)] relative">
 
-              {/* ── Tools ── */}
-            <SubLabel label="Tools" />
+    {/* texto */}
+    <div className="flex-1 relative z-10 w-full max-w-2xl">
+        <p className="font-terminal text-lg sm:text-2xl md:text-2xl leading-relaxed text-gray-200">
+            Olá, eu me chamo Vitória, tenho 19 anos e sou uma desenvolvedora de software em formação. Eu estudo Análise e Desenvolvimento de Sistemas no IFSul - Campus Gravataí.
+            <br /><br />
+            Em 2026, entrei para a 29ª edição do Programa CWI Crescer, que conta com treinamento profissional em formato de aulas e estágio. Já conclui o Level 1 e aprendi muito sobre ambiente profissional, trabalho em equipe, versionamento de código e ferramentas diversas.
+            <br /><br />
+            Além disso, me dedico na criação de aplicações web responsivas, intuitivas, bem estruturadas e, acima de tudo, me preocupo com o planejamento estético dos meus projetos.
+        </p>
+    </div>
+
+    {/* container da foto */}
+    <div className="relative flex-shrink-0 my-6 lg:my-0 w-[clamp(170px,40vw,400px)] h-[clamp(170px,40vw,400px)] flex items-center justify-center z-10">
+
+        {/* estrela grandona*/}
+        <img
+            src={pixelStar2}
+            className="absolute top-1/2 left-16 -translate-x-1/2 -translate-y-1/2 w-[min(145%)] max-w-none z-0 pointer-events-none select-none"
+        />
+
+        {/* estrelas menores */}
+        <img
+            src={pixelStar1}
+            className="absolute -top-[30%] right-[-2%] w-[clamp(36px,8vw,112px)] z-20 pointer-events-none"
+        />
+          <img
+            src={pixelStar1}
+            className="absolute -top-[10%] right-[-30%] w-[clamp(36px,8vw,112px)] z-20 pointer-events-none"
+        />
+
+        {/* estrela branca dnv */}
+        <img
+            src={Star}
+            className="absolute -bottom-[22%] -right-[38%] w-[clamp(90px,14vw,292px)] opacity-100 pointer-events-none z-0"
+        />
+         <img
+            src={Star}
+            className="absolute -bottom-[22%] -right-[36%] w-[clamp(90px,14vw,292px)] opacity-100 pointer-events-none z-0"
+        />
+             <img
+            src={Star}
+            className="absolute -top-[52%] -left-[192%] w-[clamp(90px,14vw,152px)] opacity-100 pointer-events-none z-0"
+        />
+
+        {/* eu ne */}
+        <img
+            src={eu}
+            className="w-full h-full object-cover rounded-full relative z-30 shadow-[0_20px_50px_-8px_rgba(0,0,0,0.8),0_0_40px_-5px_rgba(236,72,153,0.4)]"
+        />
+    </div>
+</div>
+
+            {/* Tech Stack */}
+           <div className="max-w-[1900px] mx-auto px-9 sm:px-9 md:px-20 pt-1 pb-2 md:pt-32 md:pb-5 relative">
+
+                <img
+                    src={Star} className="absolute right-10 sm:right-18 md:right-30 bottom-20 sm:bottom-32 w-32 sm:w-40 md:w-56 opacity-100 z-0 rotate-[15deg]" />
+                <img
+                    src={Star} className="absolute left-0 sm:left-8 md:right-30 bottom-20 sm:bottom-22 w-32 sm:w-20 md:w-56 opacity-100 z-0 rotate-[15deg]" />
+                <div className="flex items-center justify-center gap-3 sm:gap-4 mb-1 relative z-10">
+                    <img
+                        src={pixelStar1} className="w-8 h-8 object-contain" />
+                    <h3 className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-terminal text-white tracking-wide">
+                        Tech Stack
+                    </h3>
+                </div>
+
+        </div>
+
+            <SubLabel label="Ferramentas" />
             <TechGrid techs={[
                 { src: git,      alt: "Git" },
                 { src: github,   alt: "GitHub" },
@@ -75,53 +132,39 @@ const Home: React.FC = () => {
                 { src: react,  alt: "React" },
             ]} />
 
-            <SubLabel label="Back-end" />
+            <SubLabel label="Back-end & Dados" />
             <TechGrid techs={[
-                { src: node,     alt: "Node.js" },
-                { src: nodemon,  alt: "Nodemon" },
-                { src: express,  alt: "Express.js" },
-                { src: sequelize,alt: "Sequelize" },
-            ]} />
-
-            <SubLabel label="Databases" />
-            <TechGrid techs={[
-                { src: sql,   alt: "SQL" },
-                { src: mysql, alt: "MySQL" },
+                { src: node,      alt: "Node.js" },
+                { src: nodemon,   alt: "Nodemon" },
+                { src: express,   alt: "Express.js" },
+                { src: sequelize, alt: "Sequelize" },
+                { src: sql,       alt: "SQL" },
+                { src: mysql,     alt: "MySQL" },
             ]} />
 
         </div>
     );
 };
 
-/* ── Componentes auxiliares ── */
-
-const SectionTitle: React.FC<{ label: string }> = ({ label }) => (
-    <div className="flex items-center gap-4 my-10">
-        <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent to-turquoise-medium opacity-30" />
-        <h3 className="text-2xl md:text-3xl px-6 py-3 rounded-xl border-[3px] border-turquoise-medium bg-gradient-to-r from-[rgba(4,65,76,0.05)] to-[rgba(92,61,122,0.1)] shadow-[0_4px_15px_rgba(0,217,255,0.2)] transition-all duration-300 hover:shadow-[0_6px_20px_rgba(0,217,255,0.3)] whitespace-nowrap">
-            {label}
-        </h3>
-        <div className="flex-1 h-[1px] bg-gradient-to-l from-transparent to-turquoise-medium opacity-30" />
-    </div>
-);
+/* extra */
 
 const SubLabel: React.FC<{ label: string }> = ({ label }) => (
-    <div className="flex items-center gap-3 mb-6 mt-10">
-        <span className="text-turquoise-medium text-lg tracking-[0.2em] uppercase font-semibold opacity-80">
+    <div className="flex items-center justify-center mb-6 sm:mb-8 mt-10 sm:mt-16">
+        <span className="font-terminal text-white text-lg sm:text-2xl tracking-[0.2em] sm:tracking-[0.3em] uppercase">
             {label}
         </span>
     </div>
 );
 
 const TechGrid: React.FC<{ techs: { src: string; alt: string }[] }> = ({ techs }) => (
-    <div className="flex flex-wrap gap-6 items-center justify-center mb-8">
+    <div className="flex flex-wrap gap-4 sm:gap-6 items-center justify-center mb-8">
         {techs.map(({ src, alt }) => (
             <div key={alt} className="flex flex-col items-center gap-2 group">
-                <div className="p-3 rounded-xl bg-white/[0.03] border border-white/[0.06] transition-all duration-300 group-hover:scale-110 group-hover:rotate-[3deg] group-hover:border-turquoise-medium/30 group-hover:bg-white/[0.07] group-hover:drop-shadow-[0_8px_20px_rgba(0,217,255,0.4)]">
+                <div className="p-2 sm:p-3 bg-black transition-transform duration-300 hover:scale-110">
                     <img
                         src={src}
                         alt={alt}
-                        className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 object-contain"
+                        className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 object-contain [image-rendering:pixelated]"
                     />
                 </div>
             </div>

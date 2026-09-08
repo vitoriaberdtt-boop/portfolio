@@ -1,162 +1,144 @@
 import React from 'react'
-import bakery from '../assets/mariabakery.jpeg'
-import todolist from '../assets/todolist.jpg'
-import clickcounter from '../assets/clickcounter.jpg'
-import javascriptquiz from '../assets/javascriptquiz.jpg'
-import calculator from '../assets/calculator.jpg'
-import multiplicationtable from '../assets/multi.jpeg'
+import bakery from '../assets/maria.jpeg'
+import todolist from '../assets/terefa.jpeg'
+import javascriptquiz from '../assets/quiz.jpeg'
+import calculator from '../assets/calculadora.jpeg'
+import multiplicationtable from '../assets/tabuada.jpeg'
 import landingpage from '../assets/sanrio.jpg'
-import quiz from '../assets/quiz.jpg'
+import Star from '../assetstwo/star.png'
+import pixelStar1 from '../assetstwo/pixel-start-1.png'
 
 const Projects: React.FC = () => {
 
     const projects = [
         {
             src: bakery,
-            alt: "Maria's Bakery",
             title: "Maria's Bakery",
-            description: "A fictional e-commerce website for Maria's Bakery. Customers can browse and purchase cakes, add or remove items from their cart, and search for cakes by name or flavor using the search bar.",
-            stack: "Full-stack web application built with JavaScript · REST API with Node.js, Nodemon, and Express.js · MySQL as the relational database",
+            description: "Aplicação full-stack de e-commerce desenvolvida para uma confeitaria fictícia. Implementa autenticação de usuários, catálogo de produtos, busca por nome ou sabor, gerenciamento do carrinho e realização de pedidos para delivery.",
+            stack: "JavaScript, Node.js, Express, Sequelize, MySQL, autenticação de usuários (cadastro/login), API REST para gerenciamento de produtos, API ViaCEP para preenchimento automático de endereços.",
             link: "https://marias-bakery.onrender.com/",
         },
         {
             src: todolist,
-            alt: "To Do List",
-            title: "To-do List",
-            description: "A dynamic website that allows users to add tasks, filter them by category or alphabetically, and search for tasks by name.",
-            stack: "HTML 5, CSS 3, Tailwind CSS, Daisy UI, React.js and JavaScript",
+            title: "Gerenciador de Tarefas",
+            description: "Aplicação de gerenciamento de tarefas desenvolvida com React. Permite adicionar, pesquisar e filtrar tarefas por categoria ou ordem alfabética, com persistência dos dados no localStorage. Também possui suporte a temas claro e escuro.",
+            stack: "HTML5, CSS3, Tailwind CSS, DaisyUI, React.js, JavaScript",
             link: "https://lista-de-tarefas-ochre-phi.vercel.app/",
         },
         {
-            src: clickcounter,
-            alt: "Click Counter",
-            title: "Click Counter",
-            description: "A simple dynamic website that allows users to count clicks on a button and reset the counter. It also tells if the number of clicks is even or odd.",
-            stack: "HTML 5, CSS 3, TypeScript and React",
-            link: "https://click-counter-ts.vercel.app/",
-        },
-        {
             src: javascriptquiz,
-            alt: "JavaScript Quiz",
-            title: "JavaScript Quiz",
-            description: "A quiz about JavaScript, with 10 questions about basic concepts of the language, such as variables, data types, functions, loops and more.",
-            stack: "HTML 5, CSS 3 and JavaScript",
+            title: "Quiz de JavaScript",
+            description: "Aplicação interativa de quiz com 10 questões sobre conceitos fundamentais de JavaScript, abordando variáveis, tipos de dados, funções, estruturas de repetição e outros fundamentos da linguagem. Desenvolvida com manipulação do DOM e lógica de interação em JavaScript.",
+            stack: "HTML5, CSS3, JavaScript.",
             link: "https://quiz-java-script-orpin.vercel.app/",
         },
         {
             src: calculator,
-            alt: "Calculator",
-            title: "Calculator",
-            description: "A simple calculator that performs basic operations such as addition, subtraction, multiplication and division.",
-            stack: "HTML 5, CSS 3 and JavaScript",
+            title: "Calculadora",
+            description: "Calculadora interativa desenvolvida em JavaScript para realizar operações matemáticas básicas, como adição, subtração, multiplicação e divisão, com interface responsiva e gradiente",
+            stack: "HTML5, CSS3, JavaScript",
             link: "https://calculadora-vitoria.vercel.app/",
         },
         {
             src: multiplicationtable,
-            alt: "Multiplication Table",
-            title: "Multiplication Table",
-            description: "A responsive multiplication table that allows users to generate tables for any number, including negative and decimal numbers.",
-            stack: "HTML 5, CSS 3 and JavaScript",
+            title: "Tabuada",
+            description: "Aplicação responsiva para geração de tabuadas a partir de qualquer número, incluindo números negativos e decimais. Desenvolvida com JavaScript para realizar os cálculos e gerar os resultados dinamicamente.",
+            stack: "HTML5, CSS3, JavaScript",
             link: "https://tabuada-mu-two.vercel.app/",
         },
         {
             src: landingpage,
-            alt: "Landing Page",
-            title: "Landing Page",
-            description: "A responsive site featuring characters from the Japanese brand Sanrio, including Hello Kitty, My Melody, Kuromi, Pompompurin, Cinnamoroll, and more.",
-            stack: "HTML 5 and CSS 3",
+            title: "Landing Page - Sanrio",
+            description: "Uma landing page responsiva, em tons pastéis e estética kawaii com os personagens da marca japonesa Sanrio, incluindo Hello Kitty, My Melody, Kuromi, Pompompurin, Cinnamoroll e outros.",
+            stack: "HTML5, CSS3",
             link: "https://sanrio-characters-nzvm.vercel.app/",
         },
-        {
-            src: quiz,
-            alt: "Quiz",
-            title: "Quiz",
-            description: "A quiz made for beginners in programming, with questions about basic concepts of programming and web development.",
-            stack: "HTML 5 and CSS 3",
-            link: "https://quiz-para-programadores-o39f.vercel.app/",
-        },
+
     ];
 
+
     return (
-        <div className="max-w-7xl mx-auto px-5 md:px-8 py-10 md:py-20">
+        <div className="max-w-[1700px] mx-auto px-5 sm:px-8 md:px-12 py-10 md:py-20 overflow-x-hidden relative">
 
-            <SectionTitle label="My Projects" />
+            <img
+                src={Star}
+                className="absolute left-2 sm:left-4 top-6 sm:top-10 w-28 sm:w-40 md:w-56 opacity-70 pointer-events-none z-0 rotate-[-8deg]"
+            />
 
-            <div className="flex flex-col gap-16">
+            <div className="flex items-center justify-center gap-3 sm:gap-4 mb-16 sm:mb-20 relative z-10">
+                <img src={pixelStar1} className="w-6 h-6 sm:w-8 sm:h-8 object-contain" />
+                <h3 className="text-2xl xs:text-3xl sm:text-4xl md:text-6xl font-terminal text-white tracking-wide">Meus Projetos</h3>
+            </div>
+
+            <div className="flex flex-col gap-16 sm:gap-20 relative z-10">
                 {projects.map((project) => (
-                    <ProjectCard key={project.alt} project={project} />
+                    <ProjectCard key={project.title} project={project} />
                 ))}
             </div>
+
+            <img
+                src={Star}
+                className="absolute right-2 sm:right-4 top-6 sm:top-10 w-28 sm:w-40 md:w-56 opacity-70 pointer-events-none z-0 rotate-[-8deg]"
+            />
+
         </div>
     );
 };
 
-/* ── Componentes auxiliares ── */
-const SectionTitle: React.FC<{ label: string }> = ({ label }) => (
-    <div className="flex items-center gap-4 my-10">
-        <div className="flex-1 h-[1px] bg-gradient-to-r from-transparent to-turquoise-medium opacity-30" />
-        <h3 className="text-2xl md:text-3xl px-6 py-3 rounded-xl border-[3px] border-turquoise-medium bg-gradient-to-r from-[rgba(4,65,76,0.05)] to-[rgba(92,61,122,0.1)] shadow-[0_4px_15px_rgba(0,217,255,0.2)] transition-all duration-300 hover:shadow-[0_6px_20px_rgba(0,217,255,0.3)] whitespace-nowrap">
-            {label}
-        </h3>
-        <div className="flex-1 h-[1px] bg-gradient-to-l from-transparent to-turquoise-medium opacity-30" />
-    </div>
-);
 const ProjectCard: React.FC<{
     project: {
         src: string;
-        alt: string;
         title: string;
         description: string;
         stack: string;
         link: string;
     };
-}> = ({ project }) => (
-    <div className="flex flex-col md:flex-row gap-8 items-center group">
+}> = ({ project }) => {
+    return (
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center group">
 
-        {/* Imagem */}
-        <div className="w-full md:w-1/2 rounded-xl overflow-hidden border border-white/[0.06] bg-white/[0.03] transition-all duration-300 group-hover:border-turquoise-medium/30 group-hover:shadow-[0_8px_32px_rgba(0,217,255,0.15)]">
-            <img
-                src={project.src}
-                alt={project.alt}
-                className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.03]"
-            />
-        </div>
-
-        {/* Texto */}
-        <div className="w-full md:w-1/2 flex flex-col gap-4">
-
-            <div className="flex items-center gap-3">
-                <div className="w-[3px] h-8 rounded-full bg-turquoise-medium opacity-70 flex-shrink-0" />
-                <h2 className="text-xl md:text-2xl text-turquoise-bright font-bold">
-                    {project.title}
-                </h2>
+            <div className="w-full md:w-1/2 border-2 border-pink-400/30 bg-black overflow-hidden transition-all duration-300 group-hover:border-pink-400/70 group-hover:shadow-[0_0_30px_-5px_rgba(236,72,153,0.4)]">
+                <img
+                    src={project.src}
+                    className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                />
             </div>
 
-            <p className="text-lg text-text-light leading-relaxed">
-                {project.description}
-            </p>
+            <div className="w-full md:w-1/2 flex flex-col gap-4">
 
-            <div className="flex flex-wrap gap-2">
-                {project.stack.split("·").flatMap(s => s.split(",")).map(tech => tech.trim()).filter(Boolean).map(tech => (
-                    <span
-                        key={tech}
-                        className="text-xs px-3 py-1 rounded-full border border-turquoise-medium/30 text-turquoise-medium/80 bg-turquoise-medium/5 tracking-wide"
-                    >
-                        {tech}
-                    </span>
-                ))}
+                <div className="flex items-center gap-3">
+                    <img src={pixelStar1} className="w-5 h-5 sm:w-6 sm:h-6 object-contain flex-shrink-0" />
+                    <h2 className="text-2xl sm:text-3xl font-terminal text-white tracking-wide">
+                        {project.title}
+                    </h2>
+                </div>
+
+                <p className="font-terminal text-lg sm:text-xl leading-relaxed text-gray-200">
+                    {project.description}
+                </p>
+
+                <div className="flex flex-wrap gap-2">
+                    {project.stack.split("·").flatMap(s => s.split(",")).map(tech => tech.trim()).filter(Boolean).map(tech => (
+                        <span
+                            key={tech}
+                            className="font-terminal text-sm px-3 py-1 border border-pink-400/40 text-pink-300 bg-pink-400/5 tracking-wide"
+                        >
+                            {tech}
+                        </span>
+                    ))}
+                </div>
+
+                <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 font-terminal text-lg text-white underline underline-offset-4 decoration-pink-400 hover:text-pink-400 transition-colors duration-200 w-fit"
+                >
+                    Ver projeto ↗
+                </a>
             </div>
-
-            <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-sm text-turquoise-bright underline underline-offset-4 hover:text-turquoise-medium transition-colors duration-200 w-fit"
-            >
-                View project ↗
-            </a>
         </div>
-    </div>
-);
+    );
+};
 
 export default Projects;
