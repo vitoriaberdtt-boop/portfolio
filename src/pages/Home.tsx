@@ -31,7 +31,12 @@ const Home: React.FC = () => {
             {/* estrela branca */}
             <img
                 src={Star}
-                className="absolute left-3 sm:left-30 top-7 sm:top-4 w-28 sm:w-30 md:w-52 opacity-100 pointer-events-none z-0 rotate-[15deg]"
+                className="absolute left-2 sm:left-30 top-7 sm:top-4 w-28 sm:w-30 md:w-52 opacity-40 pointer-events-none z-0 rotate-[15deg]"
+                alt="star-outline-left"
+            />
+            <img
+                src={Star}
+                className="absolute left-4 sm:left-31 top-7 sm:top-4 w-28 sm:w-30 md:w-52 opacity-100 pointer-events-none z-0 rotate-[15deg]"
                 alt="star-outline-left"
             />
 
@@ -44,14 +49,23 @@ const Home: React.FC = () => {
 <div className="flex flex-col-reverse lg:flex-row gap-10 sm:gap-12 lg:gap-16 items-center justify-between mb-16 sm:mb-20 pb-16 sm:pb-24 lg:pb-20 lg:pr-[clamp(40px,8vw,140px)] relative">
 
     {/* texto */}
-    <div className="flex-1 relative z-10 w-full max-w-2xl">
-        <p className="font-terminal text-lg sm:text-2xl md:text-2xl leading-relaxed text-gray-200">
+    <div className="flex-1 relative z-10 w-full max-w-3xl">
+        <p className="font-terminal text-lg sm:text-2xl md:text-2xl text-gray-100">
             Olá, eu me chamo Vitória, tenho 19 anos e sou uma desenvolvedora de software em formação. Eu estudo Análise e Desenvolvimento de Sistemas no IFSul - Campus Gravataí.
             <br /><br />
             Em 2026, entrei para a 29ª edição do Programa CWI Crescer, que conta com treinamento profissional em formato de aulas e estágio. Já conclui o Level 1 e aprendi muito sobre ambiente profissional, trabalho em equipe, versionamento de código e ferramentas diversas.
             <br /><br />
             Além disso, me dedico na criação de aplicações web responsivas, intuitivas, bem estruturadas e, acima de tudo, me preocupo com o planejamento estético dos meus projetos.
         </p>
+        
+        <img
+            src={Star}
+            className="absolute -bottom-[52%] -right-[18%] w-[clamp(90px,14vw,292px)] opacity-50 pointer-events-none z-0 hidden md:block"
+        />
+        <img
+            src={Star}
+            className="absolute -bottom-[52%] -right-[17%] w-[clamp(90px,14vw,292px)] opacity-30 pointer-events-none z-0 hidden md:block"
+        />
     </div>
 
     {/* container da foto */}
@@ -101,7 +115,9 @@ const Home: React.FC = () => {
                 <img
                     src={Star} className="absolute right-10 sm:right-18 md:right-30 bottom-20 sm:bottom-32 w-32 sm:w-40 md:w-56 opacity-100 z-0 rotate-[15deg]" />
                 <img
-                    src={Star} className="absolute left-0 sm:left-8 md:right-30 bottom-20 sm:bottom-22 w-32 sm:w-20 md:w-56 opacity-100 z-0 rotate-[15deg]" />
+                    src={Star} className="absolute left-0 sm:left-8 md:right-30 bottom-20 sm:bottom-22 w-62 sm:w-62 md:w-65 opacity-100 z-0 rotate-[15deg] hidden md:block" />
+                    <img
+                    src={Star} className="absolute left-0 sm:left-8 md:right-30 bottom-20 sm:bottom-22 w-82 sm:w-72 md:w-75 opacity-70 z-0 rotate-[15deg] hidden md:block" />
                 <div className="flex items-center justify-center gap-3 sm:gap-4 mb-1 relative z-10">
                     <img
                         src={pixelStar1} className="w-8 h-8 object-contain" />
