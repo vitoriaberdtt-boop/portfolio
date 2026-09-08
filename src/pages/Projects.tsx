@@ -1,12 +1,14 @@
 import React from 'react'
-import bakery from '../assets/maria.jpeg'
-import todolist from '../assets/terefa.jpeg'
-import javascriptquiz from '../assets/quiz.jpeg'
-import calculator from '../assets/calculadora.jpeg'
-import multiplicationtable from '../assets/tabuada.jpeg'
-import landingpage from '../assets/sanrio.jpg'
-import Star from '../assetstwo/star.png'
-import pixelStar1 from '../assetstwo/pixel-start-1.png'
+
+import bakery from '../assets/projetos/maria.jpeg'
+import todolist from '../assets/projetos/tarefa.jpeg'
+import javascriptquiz from '../assets/projetos/quiz.jpeg'
+import calculator from '../assets/projetos/calculadora.jpeg'
+import multiplicationtable from '../assets/projetos/tabuada.jpeg'
+import landingpage from '../assets/projetos/sanrio.jpg'
+
+import Star from '../assets/decoracao/star.png'
+import pixelStar1 from '../assets/decoracao/pixel-start-1.png'
 
 const Projects: React.FC = () => {
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import Star from '../assetstwo/star.png'
-import pixelStar1 from '../assetstwo/pixel-start-1.png'
+import Star from '../assets/decoracao/star.png'
+import pixelStar1 from '../assets/decoracao/pixel-start-1.png'
 
 const Contact: React.FC = () => {
     return (
