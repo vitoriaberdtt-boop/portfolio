@@ -51,9 +51,9 @@ const Home: React.FC = () => {
     {/* texto */}
     <div className="flex-1 relative z-10 w-full max-w-3xl">
         <p className="font-terminal text-lg sm:text-2xl md:text-2xl text-gray-100">
-            Olá, eu me chamo Vitória, tenho 19 anos e sou uma desenvolvedora de software em formação. Eu estudo Análise e Desenvolvimento de Sistemas no IFSul - Campus Gravataí.
+            Olá, eu me chamo Vitória, tenho 19 anos e sou uma desenvolvedora de software em formação. Eu faço o curso superior de Análise e Desenvolvimento de Sistemas no IFSul (Campus Gravataí) e estou atualmente no 2° semestre.
             <br /><br />
-            Em 2026, entrei para a 29ª edição do Programa CWI Crescer, que conta com treinamento profissional em formato de aulas e estágio. Já conclui o Level 1 e aprendi muito sobre ambiente profissional, trabalho em equipe, versionamento de código e ferramentas diversas.
+            Em 2026, entrei para a 29ª edição do Programa CWI Crescer, que conta com treinamento profissional em formato de aulas e estágio. Já conclui o Level 1 e aprendi muito sobre ambiente profissional e trabalho em equipe na prática, clean code, TDD, versionamento de código e ferramentas diversas.
             <br /><br />
             Além disso, me dedico na criação de aplicações web responsivas, intuitivas, bem estruturadas e, acima de tudo, me preocupo com o planejamento estético dos meus projetos.
         </p>
